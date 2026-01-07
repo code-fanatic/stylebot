@@ -1,0 +1,32 @@
+name: Chrome Build
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  chrome-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build Chrome extension
+        run: yarn build
+
+      - name: Upload Chrome build
+        uses: actions/upload-artifact@v4
+        with:
+          name: stylebot-chrome
+          path: dist
