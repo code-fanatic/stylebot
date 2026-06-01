@@ -1,8 +1,8 @@
 # Stylebot
 
-![Build](https://github.com/cool-dev-code/stylebot/actions/workflows/build.yml/badge.svg)
+![Build](https://github.com/cool-fanatic/stylebot/actions/workflows/build.yml/badge.svg)
 [![Kofi](https://badgen.net/badge/icon/kofi?icon=kofi&label)](https://ko-fi.com/cooldevcode)
-![License](https://img.shields.io/github/license/cool-dev-code/stylebot)
+![License](https://img.shields.io/github/license/cool-fanatic/stylebot)
 
 Stylebot is a browser extension that lets you change the appearance of the web instantly.
 
